@@ -1,12 +1,13 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-var Hello = React.createClass({
-  render: function () {
+class Hello extends React.Component {
+  render() {
     return (
-      <div>Hello ReactJS Program!</div>
+      <div>Hello World!</div>
     )
   }
-});
+}
 
-ReactDOM.render(<Hello />, document.getElementById('app'));
+const app = document.getElementById('app');
+ReactDOM.render(<Hello />, app);
