@@ -1,7 +1,7 @@
 The 'this' Keyword in React
 ===========================
 
-- [Implicit Binding](#impicit-binding)
+- [Implicit Binding](#implicit-binding)
 - [Explicit Binding](#explicit-binding)
 - [new Binding](#new-binding)
 - [window Binding](#window-binding)
