@@ -4,7 +4,4 @@ import { routes } from './config/routes';
 
 const app = document.getElementById('app');
 
-ReactDOM.render(
-  routes,
-  app
-);
+ReactDOM.render(routes, app);

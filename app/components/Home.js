@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router'
 
-export class Home extends React.Component {
+export default class Home extends React.Component {
   render() {
     return (
       <div className='jumbotron col-sm-12 text-center'>
@@ -16,5 +16,3 @@ export class Home extends React.Component {
     )
   }
 }
-
-export default Home;
