@@ -1,10 +1,10 @@
 The 'this' Keyword in React
 ===========================
 
-- Implicit Binding
-- Explicit Binding
-- new Binding
-- window Binding
+- [Implicit Binding](#impicit-binding)
+- [Explicit Binding](#explicit-binding)
+- [new Binding](#new-binding)
+- [window Binding](#window-binding)
 
 ### Where is this function invoked?
 
