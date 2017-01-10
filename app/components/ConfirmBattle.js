@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import MainContainer from '../containers/MainContainer';
 import UserDetails from '../components/UserDetails';
 import UserDetailsWrapper from '../components/UserDetailsWrapper';
 
@@ -7,14 +8,10 @@ const height = {
 	height: '15px'
 };
 
-function puke(obj) {
-	return<pre>{JSON.stringify(obj, null, '')}</pre>
-}
-
 export default function ConfirmBattle(props) {
 	return props.isLoading === true
 		? <p> LOADING! </p>
-		: <div className="jumbotron col-sm-12 text-center">
+		: <MainContainer>
 				<h1>Confirm Players</h1>
 				<div className='col-sm-8 col-sm-offset-2'>
 					<UserDetailsWrapper header='Player One'>
@@ -39,7 +36,7 @@ export default function ConfirmBattle(props) {
 						</Link>
 					</div>
 				</div>
-			</div>
+			</MainContainer>
 }
 
 ConfirmBattle.propTypes = {
