@@ -3,30 +3,30 @@ import Results from '../components/Results';
 import { helpers as githubHelpers } from '../utils/githubHelpers';
 
 export default class ResultsContainer extends React.Component {
-	constructor() {
-		super();
-		this.state = {
-			isLoading: true,
-			scores: []
-		}
-	}
+  constructor() {
+    super();
+    this.state = {
+      isLoading: true,
+      scores: []
+    }
+  }
 
-	componentDidMount() {
-		githubHelpers.battle(this.props.location.state.playersInfo)
-			.then((scores) => {
-				this.setState({
-					scores,
-					isLoading: false
-				})
-			})
-	}
+  componentDidMount() {
+    githubHelpers.battle(this.props.location.state.playersInfo)
+      .then((scores) => {
+        this.setState({
+          scores,
+          isLoading: false
+        })
+      })
+  }
 
-	render() {
-		return (
-	    <Results
-	    	isLoading={this.state.isLoading}
-	    	playersInfo={this.props.location.state.playersInfo}
-	    	scores={this.state.scores} />
-	  )
-	}
+  render() {
+    return (
+      <Results
+        isLoading={this.state.isLoading}
+        playersInfo={this.props.location.state.playersInfo}
+        scores={this.state.scores} />
+    )
+  }
 }

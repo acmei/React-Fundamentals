@@ -1,9 +1,9 @@
 import React from 'react';
 
 export default function MainContainer(props) {
-	return (
+  return (
     <div className="jumbotron col-sm-12 text-center">
-    	{props.children}
+      {props.children}
     </div>
   )
 }

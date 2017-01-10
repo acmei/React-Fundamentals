@@ -1,5 +1,5 @@
 export const styles = {
-	tranparentBg: {
-		background: 'transparent'
-	}
+  tranparentBg: {
+    background: 'transparent'
+  }
 }
