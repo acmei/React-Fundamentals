@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import MainContainer from '../containers/MainContainer';
 import UserDetails from '../components/UserDetails';
 import UserDetailsWrapper from '../components/UserDetailsWrapper';
+import Loading from '../components/Loading';
 
 function StartOver() {
 	return (
@@ -16,7 +17,7 @@ function StartOver() {
 
 export default function Results(props) {
 	if (props.isLoading === true) {
-		return <p>LOADING</p>
+		return <Loading text='One moment' speed={100} />
 	}
 
 	if (props.scores[0] === props.scores[1]) {

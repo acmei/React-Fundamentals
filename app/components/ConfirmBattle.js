@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import MainContainer from '../containers/MainContainer';
 import UserDetails from '../components/UserDetails';
 import UserDetailsWrapper from '../components/UserDetailsWrapper';
+import Loading from '../components/Loading';
 
 const height = {
 	height: '15px'
@@ -10,7 +11,7 @@ const height = {
 
 export default function ConfirmBattle(props) {
 	return props.isLoading === true
-		? <p> LOADING! </p>
+		? <Loading speed={500} text='Waiting'/>
 		: <MainContainer>
 				<h1>Confirm Players</h1>
 				<div className='col-sm-8 col-sm-offset-2'>
